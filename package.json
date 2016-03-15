@@ -1,21 +1,21 @@
 {
-  "name": "metalsmith-alias",
+  "name": "metalsmith-aliases",
   "version": "0.0.1",
   "description": "Create aliases for your posts and redirect from them if preferable",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drager/metalsmith-alias.git"
+    "url": "git+https://github.com/drager/metalsmith-aliases.git"
   },
   "keywords": [
     "metalsmith",
-    "alias",
+    "aliases",
     "redirect"
   ],
   "author": "Jesper Håkansson",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/drager/metalsmith-alias/issues"
+    "url": "https://github.com/drager/metalsmith-aliases/issues"
   },
-  "homepage": "https://github.com/drager/metalsmith-alias#readme"
+  "homepage": "https://github.com/drager/metalsmith-aliases#readme"
 }

@@ -1,4 +1,4 @@
-metalsmith-alias
+metalsmith-aliases
 ===============
 
 Create aliases for your posts and redirect from them if preferable.
@@ -6,7 +6,7 @@ Create aliases for your posts and redirect from them if preferable.
 ## Installation
 
 ```sh
-npm install --save metalsmith-alias
+npm install --save metalsmith-aliases
 ```
 
 ## Usage
@@ -19,28 +19,28 @@ This needs to happen before the alias plugin.
 
 ```javascript
 var Metalsmith = require('metalsmith');
-var alias = require('metalsmith-alias');
+var aliases = require('metalsmith-aliases');
 var permalinks = require('metalsmith-permalinks');
 
 Metalsmith()
   .use(permalinks())
-  .use(alias());
+  .use(aliases());
 ```
 
 ### Posts
-Add your alias in the form of an array in your posts:
+Add your aliases in the form of an array in your posts:
 
 ```markdown
 ---
 title: Reactive extensions in Javascript
-alias: [2016/01/14/reactive-extensions-in-javascript]
+aliases: [2016/01/14/reactive-extensions-in-javascript]
 ---
 ```
 
 ```markdown
 ---
-title: Metalsmith alias
-alias: [2016/03/15/metalsmith-alias, metalsmith-using-alias]
+title: Metalsmith aliases
+aliases: [2016/03/15/metalsmith-aliases, metalsmith-using-aliases]
 ---
 ```
 
