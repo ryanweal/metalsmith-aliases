@@ -1,12 +1,16 @@
 metalsmith-aliases
 ===============
 
-Create aliases for your posts and redirect from them if preferable.
+Create aliases for your posts compiled into a file called nginx.conf in the root of your metalsmith installation.
+
+This file can be imported into an Nginx server directive and will emit a 301 http status for the requests.
+
+This plugin is based on metalsmith-aliases which takes a different approach of creating html files with meta-refresh, but that is W3C depreciated behavior and results in files being downloaded twice, which can make the site appear to be slower.
 
 ## Installation
 
 ```sh
-npm install --save metalsmith-aliases
+npm install --save metalsmith-aliases-nginx
 ```
 
 ## Usage
@@ -19,12 +23,12 @@ This needs to happen before the alias plugin.
 
 ```javascript
 var Metalsmith = require('metalsmith');
-var aliases = require('metalsmith-aliases');
+var aliases-nginx = require('metalsmith-aliases-nginx');
 var permalinks = require('metalsmith-permalinks');
 
 Metalsmith()
   .use(permalinks())
-  .use(aliases());
+  .use(aliases-nginx());
 ```
 
 ### Posts
@@ -44,7 +48,3 @@ aliases: [2016/03/15/metalsmith-aliases, metalsmith-using-aliases]
 ---
 ```
 
-## Options
-
-### Redirect
-If the alias should redirect to the given post. Defaults to `false`.
