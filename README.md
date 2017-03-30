@@ -1,4 +1,4 @@
-metalsmith-aliases
+metalsmith-aliases-nginx
 ===============
 
 Create aliases for your posts compiled into a file called nginx.conf in the root of your metalsmith installation.
@@ -23,12 +23,12 @@ This needs to happen before the alias plugin.
 
 ```javascript
 var Metalsmith = require('metalsmith');
-var aliases-nginx = require('metalsmith-aliases-nginx');
+var aliases = require('metalsmith-aliases-nginx');
 var permalinks = require('metalsmith-permalinks');
 
 Metalsmith()
   .use(permalinks())
-  .use(aliases-nginx());
+  .use(aliases());
 ```
 
 ### Posts
