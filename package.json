@@ -1,21 +1,21 @@
 {
-  "name": "metalsmith-aliases",
+  "name": "metalsmith-aliases-nginx",
   "version": "0.0.1",
-  "description": "Create aliases for your posts and redirect from them if preferable",
+  "description": "Create aliases for your posts as nginx configuration for managing the redirection.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/drager/metalsmith-aliases.git"
+    "url": "git+https://github.com/ryanweal/metalsmith-aliases-nginx.git"
   },
   "keywords": [
     "metalsmith",
     "aliases",
     "redirect"
   ],
-  "author": "Jesper Håkansson",
+  "author": "Ryan Weal",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/drager/metalsmith-aliases/issues"
+    "url": "https://github.com/ryanweal/metalsmith-aliases-nginx/issues"
   },
-  "homepage": "https://github.com/drager/metalsmith-aliases#readme"
+  "homepage": "https://github.com/ryanweal/metalsmith-aliases-nginx#readme"
 }

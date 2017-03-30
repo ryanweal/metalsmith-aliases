@@ -7,6 +7,8 @@ This file can be imported into an Nginx server directive and will emit a 301 htt
 
 This plugin is based on metalsmith-aliases which takes a different approach of creating html files with meta-refresh, but that is W3C depreciated behavior and results in files being downloaded twice, which can make the site appear to be slower.
 
+If you are currently using metalsmith-aliases you can use this as a drop-in replacement. There is no need to run both.
+
 ## Installation
 
 ```sh
@@ -47,4 +49,8 @@ title: Metalsmith aliases
 aliases: [2016/03/15/metalsmith-aliases, metalsmith-using-aliases]
 ---
 ```
+
+### Post-build
+
+After you run ```make build``` you will want to include the nginx.conf file that is generated into your server configuration.
 
